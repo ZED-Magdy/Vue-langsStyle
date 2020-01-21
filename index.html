@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .custom{
+            color: hotpink;
+        }
+        .east{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p v-html="text"></p>
+    </div>
+    <script type="module">
+            import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
+            import langStyle from './langStyle/index.js'
+            Vue.use(langStyle)
+            new Vue({
+                el:'#app',
+                data: {
+                    text: "obis 龯 mollitia اهلا, velit sunt quidem 龯? Lorem ipsum dolor sit amet, 龯 مرحبا elit. Harum placeat facilis alias كيف حالك aut laborum labore totam, id dicta soluta 龯 龯, dolore n"
+                },
+                mounted() {
+                    this.text = langStyle.style(this.text)
+                    langStyle.config({lang:"east_asia",Class:'east'})
+                    this.text = langStyle.style(this.text)
+
+                },
+            })
+          </script>
+</body>
+</html>

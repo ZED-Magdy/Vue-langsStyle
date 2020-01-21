@@ -1,0 +1,26 @@
+{
+  "name": "vue-langstyle",
+  "version": "1.0.9",
+  "description": "an easy way to give multiple font famillies to different languages in the same page",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZED-Magdy/Vue-langsStyle.git"
+  },
+  "keywords": [
+    "vue-langstyle",
+    "font-family",
+    "multi",
+    "languages",
+    "langs",
+    "support multiple languages"
+  ],
+  "author": "ZED Magdy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZED-Magdy/Vue-langsStyle/issues"
+  },
+  "homepage": "https://github.com/ZED-Magdy/Vue-langsStyle#readme"
+}
