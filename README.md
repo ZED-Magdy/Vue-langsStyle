@@ -99,7 +99,7 @@ export default {
   },
     mounted() {
         this.text = this.$langStyle.style(this.text)
-        this.text = this.$langStyle.customLang({Regex: this.$langStyle.langs.east_asia,Class: "east_asia",Text: this.text})
+        this.text = this.$langStyle.customLang({Regex: this.$langStyle.defaults.langs.east_asia,Class: "east_asia",Text: this.text})
     }
 }
 </script>
