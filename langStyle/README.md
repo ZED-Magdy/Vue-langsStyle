@@ -1,8 +1,5 @@
 # Vue-langsStyle
 an easy way to support multiple fonts for multiple languages in the same page.
-
-## live demo
-https://zed-magdy.github.io/Vue-langsStyle/
 ### installing
 ```
 npm i vue-langstyle --save
