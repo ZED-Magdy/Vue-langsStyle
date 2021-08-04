@@ -4,11 +4,11 @@ an easy way to support multiple fonts for multiple languages in the same page.
 ## live demo
 https://zed-magdy.github.io/Vue-langsStyle/
 ### installing
-```
+```console
 npm i vue-langstyle --save
 ```
 ### For vue cli
-```
+```vue
 import Vue from 'vue'
 import langStyle from 'vue-langstyle'
 
@@ -18,7 +18,7 @@ langStyle.config({lang:"ch",Class: "zed"}); //default lang is ar
 ```
 ### For Nuxt
 ~/plugins/langStyle
-```
+```vue
 import Vue from 'vue'
 import langStyle from 'vue-langstyle'
 
@@ -26,24 +26,24 @@ Vue.use(langStyle);
 langStyle.config({lang:"ch",Class: "zed"}); //default lang is ar
 ```
 ~/nuxt.config.js
-```
+```javascript
   plugins: [
     {src: "~/plugins/langStyle.js"}
   ],
 ```
 ### Add some style to the language
-```
+```css
 .zed {
   font-size: 25px;
   color: red
 }
 ```
 ### Style function
-```
+```javascript
   style(text :string) returns String (HTML)
 ```
 ### Full example
-```
+```vue
 <template>
   <div>
     <p v-html="text"></p>
@@ -69,21 +69,21 @@ mounted(){
 
 ### You can use customLang function
 ##### customLang function
-```
+```javascript
   customLang({
     Regex :string Regular expression for the language or the word,
     Class :string The class will be given to the language or word (Optional Default "custom"),
     Text :string The article body or the content that will be changed
   })
 ```
-```
+```javascript
   this.text = this.$langStyle.customLang({Regex: /[\u0600-\u06FF]/,Class: "zed", Text: this.text});
 ```
 ### If you wanna use east asia language and arabic in the same page
 #### You can use customLang for that
 
 ### Example
-```
+```vue
 <template>
   <div>
     <h1>Home</h1>
