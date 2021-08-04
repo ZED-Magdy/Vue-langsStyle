@@ -26,7 +26,7 @@ Vue.use(langStyle);
 langStyle.config({lang:"ch",Class: "zed"}); //default lang is ar
 ```
 ~/nuxt.config.js
-```javascript
+```js
   plugins: [
     {src: "~/plugins/langStyle.js"}
   ],
@@ -39,7 +39,7 @@ langStyle.config({lang:"ch",Class: "zed"}); //default lang is ar
 }
 ```
 ### Style function
-```javascript
+```ts
   style(text :string) returns String (HTML)
 ```
 ### Full example
@@ -69,14 +69,14 @@ mounted(){
 
 ### You can use customLang function
 ##### customLang function
-```javascript
+```js
   customLang({
     Regex :string Regular expression for the language or the word,
     Class :string The class will be given to the language or word (Optional Default "custom"),
     Text :string The article body or the content that will be changed
   })
 ```
-```javascript
+```js
   this.text = this.$langStyle.customLang({Regex: /[\u0600-\u06FF]/,Class: "zed", Text: this.text});
 ```
 ### If you wanna use east asia language and arabic in the same page
